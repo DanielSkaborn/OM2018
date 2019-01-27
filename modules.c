@@ -267,6 +267,7 @@ void regModule_WaveGen(int id) {
 }
 
 void module_JanostDCF(int id) {
+// DSP synthesizer DCF. Modified to work with floating point artimetics.
 	static int32_t f,q,vi,vo,t1,t2,t3,t4,t5,t6,t7,t8;
 
 	f = (AIN1+1.0) * 32767;
